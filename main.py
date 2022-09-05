@@ -13,12 +13,12 @@ def bogosort(arr):
         random.shuffle(arr)
 
 if __name__ == "__main__":
-    arr = [3, 4, 1, 5, 2]
+    arr = [3, 4, 1, 5, 2, 7, 9, 6, 8, 10]
 
     start = time.time()
     bogosort(arr)
     end = time.time()
-
+    
     with open("logs.txt", "a") as file:
         curr_datetime = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         file.write(f"Date-time: {curr_datetime}, Elapsed time: {end-start}s\n")
