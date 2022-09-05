@@ -13,7 +13,7 @@ def bogosort(arr):
         random.shuffle(arr)
 
 if __name__ == "__main__":
-    arr = (3, 4, 1, 5, 2)
+    arr = [3, 4, 1, 5, 2]
 
     start = time.time()
     bogosort(arr)
